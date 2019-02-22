@@ -16,12 +16,20 @@ module.exports = () => {
     .option('-a, --all', 'encrypts/decrypts all files')
     .parse(process.argv)
 
-    function encrypt () {
+    function encrypt (password, data) {
+        const algorithm = 'aes-192-cbc'
+        const key = crypto.scryptSync(password, 'salt', 24)
+        const iv = Buffer.alloc(16)
         
+        const cipher = crypto.createCipheriv(algorithm, key, iv)
+        const input = fs.createReadStream(data);
+        const output = fs.createWriteStream(`${data}.sec`);
+
+        input.pipe(cipher).pipe(output);
     }
 
     function decrypt () {
-
+        
     }
 
     function multiple () {
