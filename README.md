@@ -1,6 +1,10 @@
 # Secrecy
 Cryptographic tool for file encryption with AES cipher
 
+## Prerequisite
+
+* Node
+* npm
 
 ## Usage
 
