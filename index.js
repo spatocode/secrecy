@@ -1,6 +1,5 @@
 const crypto = require('crypto')
 const fs = require('fs')
-const path = require('path')
 const program = require('commander')
 const chalk = require('chalk')
 const { version } = require('./package.json')
@@ -12,7 +11,7 @@ module.exports = () => {
     .option('-E, --encrypt', 'encrypt files')
     .option('-D, --decrypt', 'decrypt files')
     .option('-k, --key <password>', 'password for encryption/decryption')
-    .option('-f, --file <file-name>', 'file to encrypt/decrypt')
+    .option('-f, --file <file-path>', 'file to encrypt/decrypt')
     .parse(process.argv)
 
     function encrypt (password, data) {

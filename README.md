@@ -8,17 +8,16 @@ Cryptographic tool for file encryption with AES cipher
 
 ## Usage
 
-Clone the repo:
+Install with npm:
 
 ```bash
-$ git clone https://github.com/spatocode/secrecy.git
+$ npm install secrecy
 ```
 
-Activate CLI:
+Install with yarn:
 
 ```bash
-$ cd secrecy
-$ npm link
+$ yarn add secrecy
 ```
 
 ## Command Line Options
