@@ -1,6 +1,6 @@
 {
   "name": "secrecy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Secrecy is a cryptography tool that encrypts your file with AES Cipher",
   "author": {
     "name": "Ekene Izukanne <ekeneizukanne@gmail.com>"
