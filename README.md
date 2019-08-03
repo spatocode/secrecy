@@ -1,4 +1,6 @@
-# Secrecy
+# Secrecy 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) ![version](https://img.shields.io/npm/v/secrecy) ![issues](https://img.shields.io/github/issues/spatocode/secrecy)
+
 Cryptographic tool for file encryption with AES cipher
 
 ## Prerequisite
@@ -33,4 +35,5 @@ Secrecy can be used with the following command line flags.
 
 ## License
 
-[MIT](LICENSE)
+[MIT License](http://www.github.com/spatocode/secrecy/blob/master/LICENSE)
+Copyright (c) 2019 Ekene Izukanne
