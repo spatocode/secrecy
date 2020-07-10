@@ -28,7 +28,7 @@ module.exports = () => {
 
         const algorithm = 'aes-192-cbc'
         const key = crypto.scryptSync(password, 'salt', 24)
-        const iv = Buffer.alloc(16)
+        const iv = crypto.randomBytes(16)
         
         const cipher = crypto.createCipheriv(algorithm, key, iv)
 
